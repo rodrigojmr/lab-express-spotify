@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+  background-image: url('/images/spotify-background.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.conainer {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #ececec;
+  display: flex;
+}
+.container--hr {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.search-wrapper {
+  padding: 3rem 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.466);
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search__input {
+  border: 1px solid black;
+  width: 35vw;
+  padding: 0.5rem 1rem;
+  margin-bottom: 10px;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #ececec;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  background-color: #fa6863;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,9 @@
+<div class="container container--hr">
+{{#each tracks }}
+  <div class="track">
+    <p class="track__name">{{name}}</p>
+    <audio controls download src="{{preview_url}}"></audio>
+    <a href="{{preview_url}}" download="{{preview_url}}">Download</a>
+  </div>
+  {{/each}}
+</div>
